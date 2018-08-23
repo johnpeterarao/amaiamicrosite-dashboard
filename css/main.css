@@ -1,0 +1,582 @@
+@font-face {
+  font-family: 'texta-lightuploaded_file';
+  src: url("../fonts/texta_light-webfont.woff2") format("woff2"), url("../fonts/texta_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'texta-mediumuploaded_file';
+  src: url("../fonts/texta_medium-webfont.woff2") format("woff2"), url("../fonts/texta_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'texta-regularuploaded_file';
+  src: url("../fonts/texta_regular-webfont.woff2") format("woff2"), url("../fonts/texta_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'texta-thinuploaded_file';
+  src: url("../fonts/texta_thin-webfont.woff2") format("woff2"), url("../fonts/texta_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'texta-heavyuploaded_file';
+  src: url("../fonts/texta_heavy-webfont.woff2") format("woff2"), url("../fonts/texta_heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* Reset */
+* {
+  outline: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+body, html, h1, h2, h3, h4, h5, h6, p, header, footer, div, article, section, aside {
+  padding: 0;
+  margin: 0;
+  position: relative; }
+
+body, html {
+  height: 100%; }
+
+input, select, textarea, button {
+  outline: 0;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none; }
+
+/* Common Classes */
+.wid100 {
+  width: 100%;
+  float: left; }
+
+.fleft {
+  float: left; }
+
+.fright {
+  float: right; }
+
+.listn {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.defimg, img {
+  width: 100%;
+  height: auto; }
+
+.defimg2 {
+  width: auto;
+  height: auto; }
+
+.coverimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.containimg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.pagewrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 0 25px; }
+
+.pagewrapper2 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 990px; }
+
+.close {
+  width: 35px;
+  height: 35px;
+  background: url(../images/iconset1.png) no-repeat right -35px;
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
+.clearfix {
+  display: block;
+  clear: both; }
+
+.pad-0 {
+  padding: 0px; }
+
+/* Colors & Fonts */
+/* Colors */
+.cs-container {
+  width: 100%;
+  padding: 0px 40px; }
+
+.navbar-header {
+  width: 100%; }
+
+.navbar_logo {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  max-width: 150px;
+  height: 70px;
+  z-index: 2;
+  width: 100%; }
+
+.nav-custom {
+  margin: 0px;
+  padding: 0px;
+  min-height: 101px;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  border-radius: 0px;
+  z-index: 4; }
+
+.nav-custom::after {
+  position: absolute;
+  content: '';
+  background: #fff;
+  height: 1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: -4px; }
+
+.dropdown {
+  margin-top: 24px; }
+  .dropdown .dropdown-toggle {
+    font-family: "texta-regularuploaded_file", Arial, sans-serif;
+    font-size: 30px;
+    color: #000 !important; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background: transparent; }
+
+.dropdown-menu {
+  min-width: 175px;
+  padding: 0px; }
+
+.login .form-signin .form-signin-heading {
+  background: #53b848;
+  font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px; }
+.login .form-signin .btn-login {
+  background: #53b848;
+  font-family: "texta-regularuploaded_file", Arial, sans-serif;
+  box-shadow: 0 4px #449c3a; }
+.login .form-signin input[type="password"], .login .form-signin input[type="text"], .login .form-signin input[type="email"] {
+  font-family: "texta-regularuploaded_file", Arial, sans-serif;
+  font-size: 18px;
+  padding-left: 15px; }
+.login .sec-1 {
+  padding-top: 120px;
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  min-height: 94.5vh; }
+
+footer {
+  padding: 16px 27px;
+  background: #3b3b3b;
+  position: relative;
+  z-index: 3; }
+  footer > ul > li {
+    display: inline-block; }
+    footer > ul > li p {
+      color: #a4a4a4;
+      font-size: 16px;
+      padding-right: 16px;
+      font-family: "texta-regularuploaded_file", Arial, sans-serif;
+      position: relative; }
+      footer > ul > li p a {
+        color: #a4a4a4;
+        text-decoration: none; }
+      footer > ul > li p a:hover {
+        color: #a4a4a4; }
+    footer > ul > li p::after {
+      content: '';
+      width: 2px;
+      background: #a4a4a4;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 8px; }
+  footer > ul > li:last-child p::after {
+    display: none; }
+
+.dboard {
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  min-height: 94.5vh; }
+  .dboard .pad-355 {
+    padding-left: 355px;
+    padding-right: 35px; }
+  .dboard .reap-refer {
+    padding-top: 150px;
+    padding-bottom: 20px; }
+    .dboard .reap-refer h3 {
+      font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+      font-size: 40px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 30px; }
+    .dboard .reap-refer ul.top_list {
+      margin-left: -20px; }
+      .dboard .reap-refer ul.top_list li {
+        width: 33%;
+        display: inline-block;
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 15px;
+        vertical-align: text-top; }
+        .dboard .reap-refer ul.top_list li div {
+          position: relative;
+          padding-left: 60px; }
+          .dboard .reap-refer ul.top_list li div h6 {
+            font-family: "texta-regularuploaded_file", Arial, sans-serif;
+            font-size: 20px;
+            color: #fff;
+            position: absolute;
+            left: 0px;
+            top: 8px; }
+          .dboard .reap-refer ul.top_list li div input[type="date"] {
+            width: 100%;
+            font-family: "texta-regularuploaded_file", Arial, sans-serif;
+            font-size: 20px;
+            border-radius: 5px;
+            height: 40px;
+            padding-left: 15px; }
+          .dboard .reap-refer ul.top_list li div input[type="date"]::placeholder {
+            padding-left: 15px; }
+        .dboard .reap-refer ul.top_list li .btn-hldr {
+          padding-left: 0px; }
+          .dboard .reap-refer ul.top_list li .btn-hldr button {
+            background: #fff;
+            color: #54b744;
+            text-transform: uppercase;
+            padding: 0px 11px;
+            border-radius: 5px;
+            font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+            height: 40px;
+            font-size: 22px; }
+      .dboard .reap-refer ul.top_list li:last-child {
+        width: 100%; }
+        .dboard .reap-refer ul.top_list li:last-child div {
+          max-width: 44.15%;
+          width: 100%;
+          padding-left: 0px; }
+          .dboard .reap-refer ul.top_list li:last-child div input[type="text"] {
+            font-size: 20px;
+            color: #000;
+            font-family: "texta-regularuploaded_file", Arial, sans-serif;
+            padding-left: 15px;
+            width: 100%;
+            border-radius: 5px;
+            height: 40px; }
+    .dboard .reap-refer .table-hldr ul li div.parent div.child span {
+      display: none;
+      color: #000;
+      font-family: "texta-regularuploaded_file", Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 600; }
+  .dboard .home_list {
+    padding-top: 150px;
+    padding-bottom: 20px; }
+    .dboard .home_list .status {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 50px; }
+      .dboard .home_list .status li {
+        width: 49%; }
+        .dboard .home_list .status li div {
+          max-width: 350px;
+          width: 100%;
+          margin: 0 auto;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          text-align: center;
+          padding: 22px 35px; }
+          .dboard .home_list .status li div > h4 {
+            font-size: 40px;
+            color: #fff;
+            letter-spacing: 1px;
+            font-family: "texta-heavyuploaded_file", Arial, sans-serif; }
+          .dboard .home_list .status li div > p {
+            font-size: 22px;
+            color: #fff;
+            font-family: "texta-regularuploaded_file", Arial, sans-serif;
+            text-transform: capitalize; }
+    .dboard .home_list h3 {
+      font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+      font-size: 40px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 30px; }
+    .dboard .home_list .table-hldr > ul li .parent div.child {
+      width: 24%; }
+    .dboard .home_list .table-hldr ul li div.parent div.child span {
+      display: none;
+      color: #000;
+      font-family: "texta-regularuploaded_file", Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 600; }
+  .dboard .list-refer {
+    padding-top: 150px;
+    padding-bottom: 20px; }
+    .dboard .list-refer h3 {
+      font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+      font-size: 40px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 30px; }
+    .dboard .list-refer .list-top li {
+      width: 33%;
+      display: inline-block;
+      margin-bottom: 15px; }
+      .dboard .list-refer .list-top li > div {
+        position: relative;
+        padding-left: 110px;
+        padding-right: 40px; }
+        .dboard .list-refer .list-top li > div h5 {
+          font-family: "texta-regularuploaded_file", Arial, sans-serif;
+          font-size: 20px;
+          color: #fff;
+          position: absolute;
+          left: 0px;
+          top: 8px;
+          letter-spacing: 1px; }
+        .dboard .list-refer .list-top li > div select {
+          font-size: 20px;
+          font-family: "texta-regularuploaded_file", Arial, sans-serif;
+          width: 100%;
+          padding-left: 15px;
+          height: 40px;
+          background-image: url(../images/arrow-down.jpg);
+          background-repeat: no-repeat;
+          background-size: 15px;
+          background-position: 95% center; }
+      .dboard .list-refer .list-top li input[type="submit"] {
+        height: 40px;
+        text-transform: uppercase;
+        font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+        letter-spacing: 1px;
+        color: #79a11d;
+        background: #fff;
+        border-radius: 5px;
+        font-size: 22px;
+        padding: 0px 15px; }
+    .dboard .list-refer .list-top li:last-child {
+      width: 100%; }
+      .dboard .list-refer .list-top li:last-child div {
+        max-width: 44%;
+        width: 100%;
+        padding-left: 0px; }
+        .dboard .list-refer .list-top li:last-child div input[type="text"] {
+          width: 100%;
+          font-size: 20px;
+          color: #000;
+          font-family: "texta-regularuploaded_file", Arial, sans-serif;
+          padding-left: 15px;
+          height: 40px; }
+    .dboard .list-refer .table-hldr > ul li .parent div.child {
+      width: 24%; }
+    .dboard .list-refer .table-hldr ul li div.parent div.child span {
+      display: none;
+      color: #000;
+      font-family: "texta-regularuploaded_file", Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 600; }
+  .dboard .sum-rep {
+    padding-top: 150px;
+    padding-bottom: 20px; }
+    .dboard .sum-rep h3 {
+      font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+      font-size: 40px;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 30px; }
+    .dboard .sum-rep .top-text h3 {
+      float: left; }
+    .dboard .sum-rep .top-text button {
+      text-align: center;
+      background: #6fe062;
+      color: #fff;
+      font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+      font-size: 22px;
+      height: 46px;
+      border-radius: 5px;
+      padding: 0px 20px;
+      letter-spacing: 1px;
+      float: right; }
+    .dboard .sum-rep .top_list {
+      margin-bottom: 20px; }
+      .dboard .sum-rep .top_list ul {
+        margin-left: -25px; }
+        .dboard .sum-rep .top_list ul li {
+          display: inline-block;
+          padding-left: 25px; }
+          .dboard .sum-rep .top_list ul li div {
+            position: relative; }
+            .dboard .sum-rep .top_list ul li div h6 {
+              font-family: "texta-regularuploaded_file", Arial, sans-serif;
+              font-size: 20px;
+              color: #fff;
+              position: absolute;
+              left: 0px;
+              top: 8px;
+              letter-spacing: 1px;
+              text-transform: capitalize; }
+          .dboard .sum-rep .top_list ul li input[type="text"], .dboard .sum-rep .top_list ul li input[type="date"] {
+            font-size: 20px;
+            font-family: "texta-regularuploaded_file", Arial, sans-serif;
+            width: 100%;
+            padding-left: 15px;
+            height: 40px; }
+          .dboard .sum-rep .top_list ul li select {
+            font-size: 20px;
+            font-family: "texta-regularuploaded_file", Arial, sans-serif;
+            width: 100%;
+            padding-left: 15px;
+            height: 40px;
+            background-image: url(../images/arrow-down.jpg);
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: 95% center; }
+        .dboard .sum-rep .top_list ul li:first-child {
+          width: 33.57%; }
+          .dboard .sum-rep .top_list ul li:first-child div {
+            padding-left: 60px; }
+        .dboard .sum-rep .top_list ul li:nth-child(2) {
+          width: 54.78%; }
+          .dboard .sum-rep .top_list ul li:nth-child(2) div {
+            padding-left: 50px; }
+            .dboard .sum-rep .top_list ul li:nth-child(2) div input[type="date"], .dboard .sum-rep .top_list ul li:nth-child(2) div select {
+              width: 48%; }
+            .dboard .sum-rep .top_list ul li:nth-child(2) div input[type="date"] {
+              margin-right: 15px; }
+        .dboard .sum-rep .top_list ul li:last-child {
+          width: 10.63%; }
+          .dboard .sum-rep .top_list ul li:last-child input[type="submit"] {
+            height: 40px;
+            text-transform: uppercase;
+            font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+            letter-spacing: 1px;
+            color: #79a11d;
+            background: #fff;
+            border-radius: 5px;
+            font-size: 22px;
+            padding: 0px 15px; }
+    .dboard .sum-rep .table-hldr ul li div.parent div.child span {
+      display: none;
+      color: #000;
+      font-family: "texta-regularuploaded_file", Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 600; }
+  .dboard .table-hldr > ul li {
+    width: 100%; }
+    .dboard .table-hldr > ul li .parent {
+      background: #fff;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center; }
+      .dboard .table-hldr > ul li .parent div.child {
+        width: 20%;
+        padding: 10px 15px; }
+        .dboard .table-hldr > ul li .parent div.child p {
+          color: #000;
+          font-family: "texta-regularuploaded_file", Arial, sans-serif;
+          font-size: 20px; }
+          .dboard .table-hldr > ul li .parent div.child p i {
+            position: absolute;
+            right: 40px;
+            color: #000; }
+  .dboard .table-hldr > ul li:nth-child(odd) .parent {
+    background: #f3f3f3; }
+  .dboard .table-hldr > ul li:first-child .parent {
+    background: #3b3b3b !important; }
+    .dboard .table-hldr > ul li:first-child .parent div.child h6 {
+      color: #fff;
+      font-family: "texta-heavyuploaded_file", Arial, sans-serif;
+      font-size: 25px;
+      letter-spacing: 1px; }
+
+.pagination > ul li {
+  display: inline-block;
+  padding: 10px 10px; }
+  .pagination > ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-family: "texta-regularuploaded_file", Arial, sans-serif; }
+  .pagination > ul li p {
+    color: #fff;
+    font-family: "texta-regularuploaded_file", Arial, sans-serif;
+    font-size: 20px; }
+
+/* =========Superseded css============ */
+ul.sidebar-menu {
+  margin-top: 0px; }
+
+#sidebar {
+  padding-top: 110px;
+  width: 320px;
+  background: #2ab27e;
+  overflow-y: hidden;
+  z-index: 2; }
+
+ul.sidebar-menu li {
+  margin: 0px 0px 5px 0px; }
+
+ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+  background: #219a6c;
+  border-radius: 0px;
+  color: #fff; }
+
+ul.sidebar-menu li a {
+  font-size: 22px;
+  color: #fff;
+  font-family: "texta-regularuploaded_file", Arial, sans-serif; }
+
+ul.sidebar-menu li.sub-menu {
+  line-height: auto; }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #2ab27e; }
+
+.dropdown-menu > li > a {
+  font-family: "texta-regularuploaded_file", Arial, sans-serif;
+  font-size: 20px;
+  color: #000;
+  transition: 0.3s ease-in;
+  padding: 10px 20px; }
+
+.dropdown-menu > li > a i {
+  margin-right: 10px; }
+
+.nav-custom .navbar-nav > li > a {
+  font-family: "texta-regularuploaded_file", Arial, sans-serif;
+  font-size: 20px;
+  color: #000; }
+
+.navbar-nav > li:nth-child(n + 2) {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

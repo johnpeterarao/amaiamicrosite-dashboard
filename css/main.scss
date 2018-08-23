@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'texta-lightuploaded_file';
+    src: url('../fonts/texta_light-webfont.woff2') format('woff2'),
+         url('../fonts/texta_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'texta-mediumuploaded_file';
+    src: url('../fonts/texta_medium-webfont.woff2') format('woff2'),
+         url('../fonts/texta_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'texta-regularuploaded_file';
+    src: url('../fonts/texta_regular-webfont.woff2') format('woff2'),
+         url('../fonts/texta_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'texta-thinuploaded_file';
+    src: url('../fonts/texta_thin-webfont.woff2') format('woff2'),
+         url('../fonts/texta_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'texta-heavyuploaded_file';
+    src: url('../fonts/texta_heavy-webfont.woff2') format('woff2'),
+         url('../fonts/texta_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Reset */
+
+* {outline: none; box-sizing: border-box; -webkit-overflow-scrolling: touch}
+a {text-decoration: none; cursor: pointer;}
+body, html, h1, h2, h3, h4, h5, h6, p, header, footer, div, article, section, aside {padding: 0; margin: 0; position: relative;}
+body, html {height: 100%;}
+input, select, textarea, button {outline: 0; border: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+
+/* Common Classes */
+.wid100 {width:100%; float: left; }
+.fleft {float: left;}
+.fright {float: right;}
+.listn {list-style: none; margin: 0; padding: 0;}
+.defimg {width: 100%; height: auto;}
+.defimg2 {width: auto; height: auto;}
+.coverimg {width: 100%; height: 100%; object-fit: cover;}
+.containimg {width: 100%; height: 100%; object-fit: contain;}
+.pagewrapper {width: 100%;  margin: 0 auto; max-width: 1366px; padding: 0 25px;}
+.pagewrapper2 {width: 100%; margin: 0 auto; max-width: 990px;}
+img {@extend .defimg}
+.close {width: 35px; height: 35px; background: url(../images/iconset1.png) no-repeat right -35px; position: absolute; right: 10px; top: 10px;}
+
+.clearfix { display: block; clear: both;}
+.pad-0 { padding: 0px;}
+
+
+
+
+/* Colors & Fonts */
+$fontmain: 'texta-regularuploaded_file', Arial, sans-serif;
+$fonthead: 'texta-heavyuploaded_file', Arial, sans-serif;
+$fontmed: 'texta-mediumuploaded_file', Arial, sans-serif;
+$fontcat: 'montserratsemibold', Arial, sans-serif;
+$fontlight : 'texta-lightuploaded_file', Arial, sans-serif;
+
+/* Colors */
+$white: #fff;
+$black : #000;
+$gray : #a4a4a4;
+$brown : #5f3613;
+$green : #79a11d;
+$lightgray : #ebebeb;
+
+.cs-container { width: 100%; padding: 0px 40px;}
+
+
+.navbar-header { width: 100%;}
+
+.navbar_logo { position: absolute; top: 16px; left: 50%; transform: translate(-50%, 0); width: 100%; max-width: 150px; height: 70px; z-index: 2; width: 100%;}
+
+
+.nav-custom { margin: 0px; padding: 0px; min-height: 101px; background: #fff; position: absolute; width: 100%;border-radius: 0px; z-index: 4;}
+
+.nav-custom::after { position: absolute; content: ''; background: $white; height: 1px; left: 0; right: 0; width: 100%; bottom: -4px;}
+
+
+.dropdown { margin-top: 24px;
+    .dropdown-toggle { font-family: $fontmain; font-size: 30px; color: $black!important;}
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover { background: transparent;}
+
+
+
+.dropdown-menu  { min-width: 175px; padding: 0px;}
+
+.login { 
+    .form-signin {
+        .form-signin-heading { background: #53b848; font-family: $fonthead; font-size: 30px; letter-spacing: 1px;}
+        .btn-login { background:  #53b848; font-family: $fontmain; box-shadow: 0 4px #449c3a;}
+
+        input[type="password"], input[type="text"], input[type="email"] { font-family: $fontmain; font-size: 18px; padding-left: 15px;}
+    }
+
+    .sec-1 { padding-top: 120px; background: url(../images/background.jpg) no-repeat; background-size: cover;     min-height: 94.5vh;}
+
+}
+
+
+
+
+footer { padding: 16px 27px; background: #3b3b3b; position: relative; z-index: 3;
+    > ul {
+        > li { display: inline-block;
+            p { color: #a4a4a4; font-size: 16px; padding-right: 16px; font-family: $fontmain; position: relative;
+                a { color: #a4a4a4; text-decoration: none;}
+
+                a:hover { color: #a4a4a4;}
+            }
+
+            p::after { content: ''; width: 2px; background: #a4a4a4; position: absolute; top: 0; bottom: 0; right: 8px;}
+        
+
+        }
+
+        > li:last-child {
+            p::after { display: none;}
+        }
+    }
+
+
+}
+
+
+.dboard { background: url(../images/background.jpg) no-repeat; background-size: cover; min-height: 94.5vh;
+
+    .pad-355 { padding-left: 355px; padding-right: 35px}
+
+
+    .reap-refer { padding-top: 150px; padding-bottom: 20px;
+        h3 { font-family: $fonthead; font-size: 40px; color: $white; letter-spacing: 1px; margin-bottom: 30px;}
+    
+        ul.top_list { margin-left: -20px;
+            li { width: 33%; display: inline-block; padding-left: 20px; position: relative; margin-bottom: 15px; vertical-align: text-top;
+                div { position: relative; padding-left: 60px;
+                    h6 { font-family: $fontmain; font-size: 20px; color: $white; position: absolute; left: 0px; top: 8px;}
+                    input[type="date"] { width: 100%; font-family: $fontmain; font-size: 20px; border-radius: 5px; height: 40px; padding-left: 15px;}
+                    input[type="date"]::placeholder { padding-left: 15px;}
+                }
+
+                .btn-hldr { padding-left: 0px;
+                    button { background: $white; color: #54b744; text-transform: uppercase; padding: 0px 11px; border-radius: 5px; font-family: $fonthead;  height: 40px; font-size: 22px;}
+                }
+                
+            }
+
+            li:last-child { width: 100%;
+                div { max-width: 44.15%; width: 100%; padding-left: 0px;                   
+                    input[type="text"] { font-size: 20px; color: $black; font-family: $fontmain; padding-left: 15px; width: 100%; border-radius: 5px; height: 40px;}
+                }
+            }
+        }
+
+        .table-hldr {
+            ul {
+                li {
+                    div.parent {
+                        div.child { 
+                            span { display: none; color: #000; font-family: $fontmain; font-size: 20px; font-weight: 600;}
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+    .home_list { padding-top: 150px; padding-bottom: 20px;
+        
+        .status { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: space-around; flex-wrap: wrap; margin-bottom: 50px;
+            li { width: 49%;
+                div { max-width: 350px; width: 100%; margin: 0 auto; border: 1px solid $white; border-radius: 5px; text-align: center; padding: 22px 35px; 
+                    > h4 { font-size: 40px; color: $white; letter-spacing: 1px; font-family: $fonthead;}
+                    > p { font-size: 22px; color: $white; font-family: $fontmain; text-transform: capitalize;}
+                }
+            }
+        }
+
+        h3 { font-family: "texta-heavyuploaded_file", Arial, sans-serif; font-size: 40px; color: #fff; letter-spacing: 1px; margin-bottom: 30px}
+    
+        .table-hldr > ul li .parent div.child { width: 24%;}
+
+        .table-hldr {
+            ul {
+                li {
+                    div.parent {
+                        div.child { 
+                            span { display: none; color: #000; font-family: $fontmain; font-size: 20px; font-weight: 600;}
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+    .list-refer { padding-top: 150px;  padding-bottom: 20px;
+
+        h3 { font-family: "texta-heavyuploaded_file", Arial, sans-serif; font-size: 40px; color: #fff; letter-spacing: 1px; margin-bottom: 30px}
+
+        .list-top {
+            li { width: 33%; display: inline-block; margin-bottom: 15px;
+                > div { position: relative; padding-left: 110px; padding-right: 40px;
+                    h5 { font-family: $fontmain; font-size: 20px; color: #fff; position: absolute; left: 0px; top: 8px; letter-spacing: 1px;}
+
+                    select { font-size: 20px; font-family: $fontmain; width: 100%; padding-left: 15px; height: 40px;     background-image: url(../images/arrow-down.jpg); background-repeat: no-repeat; background-size: 15px; background-position: 95% center;}
+                }
+
+                input[type="submit"] { height: 40px; text-transform: uppercase; font-family: $fonthead; letter-spacing: 1px; color: $green; background: $white; border-radius: 5px; font-size: 22px; padding: 0px 15px;}
+            }
+
+            li:last-child { width: 100%;
+                div { max-width: 44%; width: 100%; padding-left: 0px;
+                    input[type="text"]{ width: 100%; font-size: 20px; color: $black; font-family: $fontmain; padding-left: 15px; height: 40px;}
+                }
+            }
+        }
+
+        .table-hldr > ul li .parent div.child { width: 24%;}
+
+        .table-hldr {
+            ul {
+                li {
+                    div.parent {
+                        div.child { 
+                            span { display: none; color: #000; font-family: $fontmain; font-size: 20px; font-weight: 600;}
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    .sum-rep { padding-top: 150px;  padding-bottom: 20px;
+        h3 { font-family: "texta-heavyuploaded_file", Arial, sans-serif; font-size: 40px; color: #fff; letter-spacing: 1px; margin-bottom: 30px}
+    
+        .top-text { 
+            h3 { float: left;}
+            button {  text-align: center; background: #6fe062; color: $white; font-family: $fonthead; font-size: 22px; height: 46px; border-radius: 5px; padding: 0px 20px; letter-spacing: 1px; float: right;}
+        }
+
+        .top_list { margin-bottom: 20px;
+            ul { margin-left: -25px;
+                li { display: inline-block; padding-left: 25px;
+                    div { position: relative;
+                        h6 {     font-family: $fontmain; font-size: 20px; color: #fff; position: absolute; left: 0px; top: 8px; letter-spacing: 1px; text-transform: capitalize;}
+                    }
+
+                    input[type="text"], input[type="date"] { font-size: 20px; font-family: $fontmain; width: 100%; padding-left: 15px; height: 40px;}
+
+                    select {     font-size: 20px; font-family: $fontmain; width: 100%; padding-left: 15px; height: 40px; background-image: url(../images/arrow-down.jpg); background-repeat: no-repeat; background-size: 15px; background-position: 95% center;}
+                    
+                }
+
+
+
+                li:first-child { width: 33.57%;
+                    div { padding-left: 60px;}
+                }
+                li:nth-child(2) { width: 54.78%;
+                    div { padding-left: 50px;
+                        input[type="date"], select { width: 48%;}
+                        input[type="date"] { margin-right: 15px;}
+                    }
+                }
+                li:last-child { width: 10.63%;
+                    input[type="submit"] {    height: 40px; text-transform: uppercase; font-family: "texta-heavyuploaded_file", Arial, sans-serif; letter-spacing: 1px; color: #79a11d; background: #fff; border-radius: 5px; font-size: 22px; padding: 0px 15px;}
+                }
+            }
+        }
+
+        .table-hldr {
+            ul {
+                li {
+                    div.parent {
+                        div.child { 
+                            span { display: none; color: #000; font-family: $fontmain; font-size: 20px; font-weight: 600;}
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+    .table-hldr {
+            > ul { 
+                li { width: 100%;
+                    .parent { background: #fff; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; justify-content: space-between; flex-wrap: wrap; align-items: center;
+
+                        div.child { width: 20%; padding: 10px 15px;
+                            p { color: $black; font-family: $fontmain; font-size: 20px;
+                                i { position: absolute; right: 40px; color: $black;}
+                            }
+                        }
+
+                    }
+                }
+
+                li:nth-child(odd){
+                    .parent { background: #f3f3f3;}
+                }
+
+                li:first-child { 
+                    .parent { background: #3b3b3b!important; 
+                        div.child {
+                            h6 { color: $white; font-family: $fonthead; font-size: 25px; letter-spacing: 1px; }
+                        }
+                    }
+                }
+            }
+    }
+
+}
+
+
+.pagination {
+    > ul {
+        li { display: inline-block; padding: 10px 10px;
+            a { color: #fff; font-size: 20px; font-family: $fontmain;}
+            p { color: $white; font-family: $fontmain; font-size: 20px;}
+        }
+    }
+}
+
+/* =========Superseded css============ */
+
+ul.sidebar-menu { margin-top: 0px;}
+#sidebar { padding-top: 110px; width: 320px; background: #2ab27e; overflow-y: hidden; z-index: 2;}
+ul.sidebar-menu li { margin: 0px 0px 5px 0px;}
+ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus { background: #219a6c; border-radius: 0px; color: $white;}
+ul.sidebar-menu li a { font-size: 22px; color: $white; font-family: $fontmain;}
+ul.sidebar-menu li.sub-menu { line-height: auto;}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { background-color: #2ab27e;}
+.dropdown-menu > li > a { font-family: $fontmain; font-size: 20px; color: $black; transition: 0.3s ease-in; padding: 10px 20px;}
+.dropdown-menu > li > a i{ margin-right: 10px;}
+
+.nav-custom .navbar-nav > li > a {font-family: $fontmain; font-size: 20px; color: $black; }
+
+.navbar-nav>li:nth-child(n + 2) { display: none;}
